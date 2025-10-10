@@ -1,0 +1,200 @@
+include "%L"
+
+<Multi_key> <T> <U> <X> : "🐧"
+<Multi_key> <C> <a> <t> : "🐱"
+<Multi_key> <D> <o> <g> : "🐶"
+<Multi_key> <I> <D> <K> : "🤷‍"
+<Multi_key> <O> <K> : "👌"
+<Multi_key> <C> <I> <R> <Q> : "Й"
+<Multi_key> <C> <I> <R> <W> : "Ц"
+<Multi_key> <C> <I> <R> <E> : "У"
+<Multi_key> <C> <I> <R> <R> : "К"
+<Multi_key> <C> <I> <R> <T> : "Е"
+<Multi_key> <C> <I> <R> <Y> : "Н"
+<Multi_key> <C> <I> <R> <U> : "Г"
+<Multi_key> <C> <I> <R> <I> : "Ш"
+<Multi_key> <C> <I> <R> <O> : "Щ"
+<Multi_key> <C> <I> <R> <P> : "З"
+<Multi_key> <C> <I> <R> <A> : "Х"
+<Multi_key> <C> <I> <R> <}> : "Ъ"
+<Multi_key> <C> <I> <R> <A> : "Ф"
+<Multi_key> <C> <I> <R> <S> : "Ы"
+<Multi_key> <C> <I> <R> <D> : "В"
+<Multi_key> <C> <I> <R> <F> : "А"
+<Multi_key> <C> <I> <R> <G> : "П"
+<Multi_key> <C> <I> <R> <H> : "Р"
+<Multi_key> <C> <I> <R> <J> : "О"
+<Multi_key> <C> <I> <R> <K> : "Л"
+<Multi_key> <C> <I> <R> <L> : "Д"
+<Multi_key> <C> <I> <R> <:> : "Ж"
+<Multi_key> <C> <I> <R> <"> : "Э"
+<Multi_key> <C> <I> <R> <Z> : "Я"
+<Multi_key> <C> <I> <R> <X> : "Ч"
+<Multi_key> <C> <I> <R> <C> : "С"
+<Multi_key> <C> <I> <R> <V> : "М"
+<Multi_key> <C> <I> <R> <B> : "И"
+<Multi_key> <C> <I> <R> <N> : "Т"
+<Multi_key> <C> <I> <R> <M> : "Ь"
+<Multi_key> <C> <I> <R> <,> : "Б"
+<Multi_key> <C> <I> <R> <.> : "Ю"
+<Multi_key> <C> <i> <r> <q> : "й"
+<Multi_key> <C> <i> <r> <w> : "ц"
+<Multi_key> <C> <i> <r> <e> : "у"
+<Multi_key> <C> <i> <r> <r> : "к"
+<Multi_key> <C> <i> <r> <t> : "е"
+<Multi_key> <C> <i> <r> <y> : "н"
+<Multi_key> <C> <i> <r> <u> : "г"
+<Multi_key> <C> <i> <r> <i> : "ш"
+<Multi_key> <C> <i> <r> <o> : "щ"
+<Multi_key> <C> <i> <r> <p> : "з"
+<Multi_key> <C> <i> <r> <[> : "х"
+<Multi_key> <C> <i> <r> <]> : "ъ"
+<Multi_key> <C> <i> <r> <a> : "ф"
+<Multi_key> <C> <i> <r> <s> : "ы"
+<Multi_key> <C> <i> <r> <d> : "в"
+<Multi_key> <C> <i> <r> <f> : "а"
+<Multi_key> <C> <i> <r> <g> : "п"
+<Multi_key> <C> <i> <r> <h> : "р"
+<Multi_key> <C> <i> <r> <j> : "о"
+<Multi_key> <C> <i> <r> <k> : "л"
+<Multi_key> <C> <i> <r> <l> : "д"
+<Multi_key> <C> <i> <r> <;> : "ж"
+<Multi_key> <C> <i> <r> <'> : "э"
+<Multi_key> <C> <i> <r> <z> : "я"
+<Multi_key> <C> <i> <r> <x> : "ч"
+<Multi_key> <C> <i> <r> <c> : "с"
+<Multi_key> <C> <i> <r> <v> : "м"
+<Multi_key> <C> <i> <r> <b> : "и"
+<Multi_key> <C> <i> <r> <n> : "т"
+<Multi_key> <C> <i> <r> <m> : "ь"
+<Multi_key> <C> <i> <r> <,> : "б"
+<Multi_key> <C> <i> <r> <.> : "ю"
+
+# GREEKs stolen from https://askubuntu.com/questions/787113/compose-dead-greek-with-compose-key
+
+# GREEK CAPITAL LETTERS
+<Multi_key> <G> <A> : "Α"    U0391    # GREEK CAPITAL LETTER ALPHA
+<Multi_key> <G> <B> : "Β"    U0392    # GREEK CAPITAL LETTER BETA
+<Multi_key> <G> <G> : "Γ"    U0393    # GREEK CAPITAL LETTER GAMMA
+<Multi_key> <G> <D> : "Δ"    U0394    # GREEK CAPITAL LETTER DELTA
+<Multi_key> <G> <E> : "Ε"    U0395    # GREEK CAPITAL LETTER EPSILON
+<Multi_key> <G> <Z> : "Ζ"    U0396    # GREEK CAPITAL LETTER ZETA
+<Multi_key> <G> <H> : "Η"    U0397    # GREEK CAPITAL LETTER ETA
+<Multi_key> <G> <I> : "Ι"    U0399    # GREEK CAPITAL LETTER IOTA
+<Multi_key> <G> <K> : "Κ"    U039A    # GREEK CAPITAL LETTER KAPPA
+<Multi_key> <G> <L> : "Λ"    U039B    # GREEK CAPITAL LETTER LAMDA
+<Multi_key> <G> <M> : "Μ"    U039C    # GREEK CAPITAL LETTER MU
+<Multi_key> <G> <N> : "Ν"    U039D    # GREEK CAPITAL LETTER NU
+<Multi_key> <G> <P> : "Π"    U03A0    # GREEK CAPITAL LETTER PI
+<Multi_key> <G> <R> : "Ρ"    U03A1    # GREEK CAPITAL LETTER RHO
+<Multi_key> <G> <S> : "Σ"    U03A3    # GREEK CAPITAL LETTER SIGMA
+<Multi_key> <G> <T> : "Τ"    U03A4    # GREEK CAPITAL LETTER TAU
+<Multi_key> <G> <U> : "Υ"    U03A5    # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <G> <F> : "Φ"    U03A6    # GREEK CAPITAL LETTER PHI
+<Multi_key> <G> <X> : "Χ"    U03A7    # GREEK CAPITAL LETTER CHI
+<Multi_key> <G> <O> : "Ω"    U03A9    # GREEK CAPITAL LETTER OMEGA
+
+# DOUBLES (additional stroke <Q>)
+<Multi_key> <G> <Q> <T> : "Θ"    U0398    # GREEK CAPITAL LETTER THETA
+<Multi_key> <G> <Q> <O> : "Ο"    U039F    # GREEK CAPITAL LETTER OMICRON
+<Multi_key> <G> <Q> <X> : "Ξ"    U039E    # GREEK CAPITAL LETTER XI
+<Multi_key> <G> <Q> <P> : "Ψ"    U03A8    # GREEK CAPITAL LETTER PSI
+
+# greek small letters
+<Multi_key> <g> <a> : "α"    U03B1    # GREEK SMALL LETTER ALPHA
+<Multi_key> <g> <b> : "β"    U03B2    # GREEK SMALL LETTER BETA
+<Multi_key> <g> <g> : "γ"    U03B3    # GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <d> : "δ"    U03B4    # GREEK SMALL LETTER DELTA
+<Multi_key> <g> <e> : "ε"    U03B5    # GREEK SMALL LETTER EPSILON
+<Multi_key> <g> <z> : "ζ"    U03B6    # GREEK SMALL LETTER ZETA
+<Multi_key> <g> <h> : "η"    U03B7    # GREEK SMALL LETTER ETA
+<Multi_key> <g> <i> : "ι"    U03B9    # GREEK SMALL LETTER IOTA
+<Multi_key> <g> <k> : "κ"    U03BA    # GREEK SMALL LETTER KAPPA
+<Multi_key> <g> <l> : "λ"    U03BB    # GREEK SMALL LETTER LAMDA
+<Multi_key> <g> <m> : "μ"    U03BC    # GREEK SMALL LETTER MU
+<Multi_key> <g> <n> : "ν"    U03BD    # GREEK SMALL LETTER NU
+<Multi_key> <g> <p> : "π"    U03C0    # GREEK SMALL LETTER PI
+<Multi_key> <g> <r> : "ρ"    U03C1    # GREEK SMALL LETTER RHO
+<Multi_key> <g> <s> : "σ"    U03C3    # GREEK SMALL LETTER SIGMA
+<Multi_key> <g> <t> : "τ"    U03C4    # GREEK SMALL LETTER TAU
+<Multi_key> <g> <u> : "υ"    U03C5    # GREEK SMALL LETTER UPSILON
+<Multi_key> <g> <f> : "φ"    U03C6    # GREEK SMALL LETTER PHI
+<Multi_key> <g> <x> : "χ"    U03C7    # GREEK SMALL LETTER CHI
+<Multi_key> <g> <o> : "ω"    U03C9    # GREEK SMALL LETTER OMEGA
+
+# doubles (additional stroke <q>)
+<Multi_key> <g> <q> <t> : "θ"    U03B8    # GREEK SMALL LETTER THETA
+<Multi_key> <g> <q> <o> : "ο"    U03BF    # GREEK SMALL LETTER OMICRON
+<Multi_key> <g> <q> <p> : "ψ"    U03C8    # GREEK SMALL LETTER PSI
+<Multi_key> <g> <q> <s> : "ς"    U03C2    # GREEK SMALL LETTER FINAL SIGMA
+<Multi_key> <g> <q> <x> : "ξ"    U03BE    # GREEK SMALL LETTER XI
+
+<Multi_key> <Cyrillic_en> <Cyrillic_che> : "«" U00AB   # н + ч → «
+<Multi_key> <Cyrillic_ka> <Cyrillic_tse> : "»" U00BB   # к + ц → »
+
+<Multi_key> <!> <=> : "≠"
+
+<Multi_key> <Cyrillic_em> <Cyrillic_te> <Cyrillic_che> : "…"
+
+<Multi_key> <o> <1> : "❶"
+<Multi_key> <o> <2> : "❷"
+<Multi_key> <o> <3> : "❸"
+<Multi_key> <o> <4> : "❹"
+<Multi_key> <o> <5> : "❺"
+<Multi_key> <o> <6> : "❻"
+<Multi_key> <o> <7> : "❼"
+<Multi_key> <o> <8> : "❽"
+<Multi_key> <o> <9> : "❾"
+<Multi_key> <o> <0> : "❿"
+<Multi_key> <p> <i> : "π"
+
+<Multi_key> <K> <k> <0> : "(^_~)"
+<Multi_key> <K> <k> <1> : "(ఠ ͟ʖ ఠ)"
+<Multi_key> <K> <k> <2> : "(╯°□°）╯︵ ┻━┻"  
+<Multi_key> <K> <k> <3> : "┬─┬ ノ( ゜-゜ノ)"  
+<Multi_key> <K> <k> <4> : "¯\\_(ツ)_/¯"  
+<Multi_key> <K> <k> <5> : "(ಠ_ಠ)"
+<Multi_key> <K> <k> <6> : "(｡♥‿♥｡)"  
+<Multi_key> <K> <k> <7> : "(☞ﾟヮﾟ)☞"  
+<Multi_key> <K> <k> <8> : "(ಥ﹏ಥ)"  
+<Multi_key> <K> <k> <9> : "(ノಠ益ಠ)ノ彡┻━┻"  
+
+<Multi_key> <h> <i> <h> : "😅"
+<Multi_key> <t> <h> <n> : "🤔"
+<Multi_key> <s> <u> <m> : "∑"
+<Multi_key> <i> <n> <t> : "∫"
+<Multi_key> <f> <o> <r> : "∀"
+<Multi_key> <e> <x> : "∃"  
+<Multi_key> <a> <n> <d> : "∧"  
+<Multi_key> <o> <r> : "∨"  
+<Multi_key> <i> <m> <p> : "⇒"  
+<Multi_key> <e> <q> : "⇔"  
+<Multi_key> <d> <i> <f> : "∂"  
+<Multi_key> <b> <l> <q> : "╭"
+<Multi_key> <b> <l> <w> : "─"
+<Multi_key> <b> <l> <e> : "╮"
+<Multi_key> <b> <l> <d> : "│"
+<Multi_key> <b> <l> <c> : "╯"
+<Multi_key> <b> <l> <x> : "─"
+<Multi_key> <b> <l> <z> : "╰"
+<Multi_key> <b> <l> <a> : "│"
+<Multi_key> <~> : "≈"
+
+<Multi_key> <M> <R> : "✓"
+
+<Multi_key> <Q> <q> : "̵"
+<Multi_key> <Q> <w> : "̶"
+<Multi_key> <Q> <e> : "̷"
+<Multi_key> <Q> <r> : "̸"
+<Multi_key> <Q> <t> : "̂"
+<Multi_key> <Q> <y> : "̆"
+
+<Multi_key> <M> <b> : "⌫"
+<Multi_key> <M> <c> : "⌥"
+<Multi_key> <M> <C> : "⌘"
+<Multi_key> <M> <r> : "⏎"
+
+<Multi_key> <0> <0> : "⦰"
+
+<Multi_key> <t> <r> <u> <e> : "⊤"
+<Multi_key> <f> <a> <l> <s> <e> : "⊥"

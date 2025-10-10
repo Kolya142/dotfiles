@@ -1,0 +1,1 @@
+qemu-system-x86_64 -hda tos.drive -m 2048M --enable-kvm -audiodev pa,id=snd0 -machine pcspk-audiodev=snd0 -display sdl,gl=on
