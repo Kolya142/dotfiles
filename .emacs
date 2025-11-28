@@ -7,8 +7,22 @@
 
 (package-initialize)
 
+(defvar straight_el_bootstrap-version)
+(let ((straight_el_bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (straight_el_bootstrap-version 5))
+  (unless (file-exists-p straight_el_bootstrap-file)
+    (with-current-buffer
+	(url-retrieve-synchronously
+     "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+     'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load straight_el_bootstrap-file nil 'nomessage))
+
+(straight-use-package 'magit)
+
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
-(require 'jai-mode)
 
 (package-install 'yasnippet)
 (require 'yasnippet)
@@ -22,27 +36,6 @@
 ;; (require 'ido-completing-read+)
 ;; (ido-mode 1)
 ;; (ido-everywhere 1)
-
-(use-package lsp-mode
-  :ensure t
-  :hook ((python-mode . lsp)
-	 (python3-mode . lsp)
-         (c++-mode . lsp)
-         (c-mode . lsp)
-	 (lisp-mode . lsp)
-	 (elisp-mode . lsp)
-	 (ruby-mode . lsp)
-	 (gas-mode . lsp)
-	 (go-mode . lsp)
-	 (emacs-lisp-mode . lsp)
-	 (typescript-mode . lsp)
-         (java-mode . lsp))
-  :commands lsp
-  )
-
-(use-package lsp-ui
-  :ensure t
-  :commands lsp-ui-mode)
 
 (use-package rainbow-delimiters
   :ensure t
@@ -166,7 +159,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.lisp\\'" . base-mode))
 
-(load-file "~/.emacs.d/fasm-mode.el")
+;; (load-file "~/.emacs.d/fasm-mode.el")
 
 
 (require 'subr-x)
@@ -281,6 +274,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(inhibit-startup-screen t)
  '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -288,3 +282,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(set-frame-font "-BE5N-Iosevka-regular-normal-normal-*-*-*-*-*-d-0-iso10646-1")
