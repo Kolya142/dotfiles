@@ -1,0 +1,2 @@
+TEXT_EDITOR=/usr/bin/emacs-gtk
+TERMINAL=/usr/bin/xfce4-terminal

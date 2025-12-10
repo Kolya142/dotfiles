@@ -1,0 +1,18 @@
+{
+    "tasks": [
+        {
+            "name": "vinch",
+            "path": "~/Programming/Projects/virtual-nachalnik",
+            "plan": {
+                "time": "2d/1w"
+            },
+        },
+        {
+            "name": "koogle",
+            "path": "~/Programming/Projects/Koogle/",
+            "plan": {
+                "time": "2d/1w"
+            },
+        }
+    ]
+}
