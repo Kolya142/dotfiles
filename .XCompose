@@ -178,6 +178,7 @@ include "%L"
 <Multi_key> <b> <l> <x> : "─"
 <Multi_key> <b> <l> <z> : "╰"
 <Multi_key> <b> <l> <a> : "│"
+<Multi_key> <C> <o> : "∈"
 <Multi_key> <~> : "≈"
 
 <Multi_key> <M> <R> : "✓"
