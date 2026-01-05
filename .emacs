@@ -58,6 +58,8 @@
 
 (global-set-key (kbd "C-:") 'avy-goto-char)
 
+(global-set-key (kbd "M-p 0") #'dictionary-lookup-definition)
+
 (line-number-mode)
 (global-display-line-numbers-mode)
 
