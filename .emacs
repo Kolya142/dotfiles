@@ -23,6 +23,10 @@
 (straight-use-package 'magit)
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
+(add-to-list 'load-path "~/ThirdParty/lean4-mode")
+(require 'lean4-mode)
+
+(add-to-list 'load-path "~/.emacs.d/theme69-theme.el")
 
 (package-install 'yasnippet)
 (require 'yasnippet)
@@ -30,6 +34,14 @@
 
 (package-install 'company)
 (require 'company)
+
+(package-install 'multiple-cursors)
+(require 'multiple-cursors)
+
+(global-set-key (kbd "C-c C-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c a") 'mc/mark-all-like-this)
 
 (global-company-mode)
 
@@ -40,6 +52,9 @@
 (use-package rainbow-delimiters
   :ensure t
 )
+
+(package-install 'dash)
+(package-install 'lsp-mode)
 
 (package-install 'avy)
 
@@ -63,6 +78,9 @@
 (line-number-mode)
 (global-display-line-numbers-mode)
 
+(electric-indent-mode 0)
+
+; (load-theme 'theme69 'NO-CONFIRM)
 (load-theme 'tango-dark)
 
 (tool-bar-mode 0)
@@ -106,6 +124,7 @@
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+
 
 (add-to-list 'auto-mode-alist '("\\.faivy\\'" . jai-mode))
 
@@ -196,7 +215,7 @@
     "and_eq" "asm" "atomic_cancel" "atomic_commit" "atomic_noexcept" "bitand"
     "bitor" "catch"  "class" "co_await"
     "co_return" "co_yield" "compl" "concept" "const_cast" "consteval" "constexpr"
-    "constinit" "decltype" "delete" "dynamic_cast" "explicit" "export" "false" 
+    "constinit" "decltype" "delete" "dynamic_cast" "explicit" "export" "false"
     "friend" "inline" "mutable" "namespace" "new" "noexcept" "not" "not_eq"
     "nullptr" "operator" "or" "or_eq" "private" "protected" "public" "reflexpr"
     "reinterpret_cast" "requires" "static_assert" "static_cast" "synchronized"
@@ -269,19 +288,50 @@
   (setq-local indent-line-function 'simpc-indent-line)
   (setq-local comment-start "// "))
 
+(add-to-list 'auto-mode-alist '("\\.c\\'" . simpc-mode))
+(add-to-list 'auto-mode-alist '("\\.cc\\'" . simpc-mode))
+(add-to-list 'auto-mode-alist '("\\.cpp\\'" . simpc-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . simpc-mode))
+(add-to-list 'auto-mode-alist '("\\.hpp\\'" . simpc-mode))
+
+
+(add-to-list 'auto-mode-alist '("\\.pyx\\'" . python-mode))  ;;
+
+;; https://github.com/rexim/dotfiles/blob/master/.emacs
+(defun setup-whitespace-handling ()
+  (interactive)
+  (whitespace-mode 1)
+  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+
+(add-hook 'tuareg-mode-hook 'setup-whitespace-handling)
+(add-hook 'c++-mode-hook 'setup-whitespace-handling)
+(add-hook 'c-mode-hook 'setup-whitespace-handling)
+(add-hook 'simpc-mode-hook 'setup-whitespace-handling)
+(add-hook 'emacs-lisp-mode 'setup-whitespace-handling)
+(add-hook 'java-mode-hook 'setup-whitespace-handling)
+(add-hook 'lua-mode-hook 'setup-whitespace-handling)
+(add-hook 'rust-mode-hook 'setup-whitespace-handling)
+(add-hook 'scala-mode-hook 'setup-whitespace-handling)
+(add-hook 'markdown-mode-hook 'setup-whitespace-handling)
+(add-hook 'haskell-mode-hook 'setup-whitespace-handling)
+(add-hook 'python-mode-hook 'setup-whitespace-handling)
+(add-hook 'erlang-mode-hook 'setup-whitespace-handling)
+(add-hook 'asm-mode-hook 'setup-whitespace-handling)
+(add-hook 'fasm-mode-hook 'setup-whitespace-handling)
+(add-hook 'go-mode-hook 'setup-whitespace-handling)
+(add-hook 'nim-mode-hook 'setup-whitespace-handling)
+(add-hook 'yaml-mode-hook 'setup-whitespace-handling)
+(add-hook 'porth-mode-hook 'setup-whitespace-handling)
+
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(inhibit-startup-screen t)
- '(package-selected-packages nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(set-frame-font "-BE5N-Iosevka-regular-normal-normal-*-*-*-*-*-d-0-iso10646-1")
+(set-frame-font "Iosevka Term-11")
+
+
+
+;; https://stackoverflow.com/questions/15946178/
+(setq whitespace-display-mappings
+  '(
+    (space-mark 32 [183] [46])
+    (tab-mark 9 [9655 9] [92 9])
+    ))
