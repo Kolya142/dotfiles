@@ -125,6 +125,22 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+(defun choose-input-method ()
+  (interactive)
+  (set-input-method
+   (car
+    (cdr 
+     (assoc-string
+      (completing-read "Choose input method: " (list 'russian 'german 'greek 'dvorak 'tex 'emoji 'ipa))
+      '(
+	("russian" russian-computer)
+	("german" german)
+	("greek" greek)
+	("dvorak" english-dvorak)
+	("tex" TeX)
+	("emoji" emoji)
+	("ipa" ipa)))))))
+(global-set-key (kbd "C-<tab>") 'choose-input-method)
 
 (add-to-list 'auto-mode-alist '("\\.faivy\\'" . jai-mode))
 
